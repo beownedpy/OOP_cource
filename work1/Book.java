@@ -1,25 +1,21 @@
-package lab2;
-
-import lab1.Author;
-import lab1.BookGenre;
-import lab1.Publication;
+package work1;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
     private String title;
-    private lab1.BookGenre genre;
+    private BookGenre genre;
     private Author author;
-    private final List<lab1.Publication> publications = new ArrayList<>();
+    private final List<Publication> publications = new ArrayList<>();
 
-    public Book(String title, lab1.BookGenre genre, Author author) {
+    public Book(String title, BookGenre genre, Author author) {
         this.title = title;
         this.genre = genre;
         this.author = author;
     }
 
-    public void addPublication(lab1.Publication publication) {
+    public void addPublication(Publication publication) {
         publications.add(publication);
     }
 
@@ -30,7 +26,7 @@ public class Book {
         author.printInfo();
         System.out.println();
         System.out.println("Publications:");
-        for (lab1.Publication p : publications) {
+        for (Publication p : publications) {
             System.out.print("   - ");
             p.printInfo();
         }
@@ -50,7 +46,7 @@ public class Book {
         this.title = title;
     }
 
-    public lab1.BookGenre getGenre() {
+    public BookGenre getGenre() {
         return genre;
     }
     public void setGenre(BookGenre genre) {

@@ -1,13 +1,11 @@
-package lab2;
-
-import lab1.Date;
+package work1;
 
 public class Author {
     private String name;
     private String surname;
-    private lab1.Date birthdate;
+    private Date birthdate;
 
-    public Author(String name, String surname, lab1.Date birthdate) {
+    public Author(String name, String surname, Date birthdate) {
         this.name = name;
         this.surname = surname;
         this.birthdate = birthdate;
@@ -19,7 +17,7 @@ public class Author {
     public String getSurname() {
         return surname;
     }
-    public lab1.Date getBirthdate() {
+    public Date getBirthdate() {
         return birthdate;
     }
 

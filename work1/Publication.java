@@ -1,7 +1,4 @@
-package lab2;
-
-import lab1.BookGenre;
-import lab1.Date;
+package work1;
 
 public class Publication {
     private String title;

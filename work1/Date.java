@@ -1,4 +1,4 @@
-package lab2;
+package work1;
 
 public class Date {
     private int day;
