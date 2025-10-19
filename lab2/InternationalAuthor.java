@@ -5,7 +5,7 @@ public class InternationalAuthor extends Author {
     private String language;
 
     public InternationalAuthor(String firstName, String lastName, Date birthDate, String nationality, String language) {
-        super(firstName, lastName, birthDate); // вызывает конструктор Author
+        super(firstName, lastName, birthDate);
         this.nationality = nationality;
         this.language = language;
     }
